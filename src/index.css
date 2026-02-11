@@ -1,0 +1,74 @@
+:root {
+  /* Colors - Soft Neubrutalism Palette */
+  --color-bg: #fdfdfd;
+  --color-text: #1a1a1a;
+  --color-primary: #a8dadc;
+  /* Soft Mint */
+  --color-secondary: #f4a261;
+  /* Soft Orange/Peach */
+  --color-accent: #e63946;
+  /* Relaxed Red */
+  --color-chill-yellow: #ffe66d;
+  --color-chill-purple: #cdb4db;
+  --color-chill-green: #b7e4c7;
+
+  /* Borders & Shadows */
+  --border-width: 2px;
+  --border-color: #000000;
+  --shadow-hard: 4px 4px 0px 0px #000000;
+  --shadow-hover: 2px 2px 0px 0px #000000;
+
+  /* Typography */
+  --font-main: 'Outfit', sans-serif;
+  --font-display: 'Fredoka', cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+button {
+  font-family: var(--font-main);
+  cursor: pointer;
+}
+
+/* Lenis Scroll Setup */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
