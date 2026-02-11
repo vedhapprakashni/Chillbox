@@ -3,6 +3,8 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import MoodSelection from './pages/MoodSelection';
 import GameSelection from './pages/GameSelection';
+import BreathingGame from './games/BreathingGame';
+import FocusTapGame from './games/FocusTapGame';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="mood" element={<MoodSelection />} />
           <Route path="games" element={<GameSelection />} />
+          <Route path="game/breathing" element={<BreathingGame />} />
+          <Route path="game/focus" element={<FocusTapGame />} />
         </Route>
       </Routes>
     </BrowserRouter>
