@@ -5,6 +5,7 @@ import MoodSelection from './pages/MoodSelection';
 import GameSelection from './pages/GameSelection';
 import BreathingGame from './games/BreathingGame';
 import FocusTapGame from './games/FocusTapGame';
+import MemoryGame from './games/MemoryGame';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="games" element={<GameSelection />} />
           <Route path="game/breathing" element={<BreathingGame />} />
           <Route path="game/focus" element={<FocusTapGame />} />
+          <Route path="game/memory" element={<MemoryGame />} />
         </Route>
       </Routes>
     </BrowserRouter>
