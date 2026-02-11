@@ -6,6 +6,8 @@ import GameSelection from './pages/GameSelection';
 import BreathingGame from './games/BreathingGame';
 import FocusTapGame from './games/FocusTapGame';
 import MemoryGame from './games/MemoryGame';
+import StressPopGame from './games/StressPopGame';
+import Cooldown from './pages/Cooldown';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="game/breathing" element={<BreathingGame />} />
           <Route path="game/focus" element={<FocusTapGame />} />
           <Route path="game/memory" element={<MemoryGame />} />
+          <Route path="game/stress-pop" element={<StressPopGame />} />
+          <Route path="cooldown" element={<Cooldown />} />
         </Route>
       </Routes>
     </BrowserRouter>
