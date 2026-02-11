@@ -8,6 +8,7 @@ import FocusTapGame from './games/FocusTapGame';
 import MemoryGame from './games/MemoryGame';
 import StressPopGame from './games/StressPopGame';
 import Cooldown from './pages/Cooldown';
+import Ready from './pages/Ready';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="game/memory" element={<MemoryGame />} />
           <Route path="game/stress-pop" element={<StressPopGame />} />
           <Route path="cooldown" element={<Cooldown />} />
+          <Route path="ready" element={<Ready />} />
         </Route>
       </Routes>
     </BrowserRouter>
